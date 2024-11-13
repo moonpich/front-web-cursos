@@ -1,0 +1,12 @@
+@import url(./variables.css);
+body{
+    background: var(--bg-main);
+}
+*{
+    color: var(--text);
+    box-sizing: border-box;
+}
+img{
+    width: 3rem;
+    height: 3rem;
+}
