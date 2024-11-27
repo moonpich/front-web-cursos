@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="../../public/css/register.css" />
+  <script src="./register.js" defer></script>
+  <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
+
+</head>
+
+<body>
+  <main class="main">
+    <section class="video-section">
+      <figure class="video-section__figure">
+        <video autoplay="" loop="" playsinline="" class="video-section__video" height="255"
+          src="../../public/video/cubic.webm" width="255"></video>
+      </figure>
+    </section>
+
+    <section class="form-section">
+      <form class="form-section__form">
+        <div class="form-section__div-header-info">
+          <h3 class="form-section__title">Registrarse</h3>
+
+        </div>
+        <div>
+          <div class="form-section_nameLast">
+            <div class="form-section__div-delimiter">
+              <label for="mail" class="form-section__label "> Nombre's: *</label>
+              <input type="name" name="name" autofocus id="mail" placeholder="Ingresa tu nombre"
+                class="form-section__input" />
+              <div class="form-section__div-delimiter">
+                <label for="mail" class="form-section__label"> Apellidos: </label>
+                <input type="lastName" name="lastName" autofocus id="mail" placeholder="Ingresa tus apellidos"
+                  class="form-section__input" />
+
+                <div class="form-section__div-delimiter">
+                  <label for="password" class="form-section__label">Contraseña: *
+                  </label>
+                  <input type="password" name="password" placeholder="Ingresa tu contraseña" id="password"
+                    class="form-section__input" />
+                  
+                </div>
+              </div>
+            </div>
+            <div class="form-section__div-delimiter">
+              <label for="mail" class="form-section__label"> Correo Electrónico: * </label>
+              <input type="mail" name="mail" autofocus id="mail" placeholder="Ingresa tu correo electrónico"
+                class="form-section__input" />
+
+              <div class="form-section__div-delimiter">
+                <label for="mail" class="form-section__label "> Teléfono: *</label>
+                <input type="phone" name="phone" autofocus id="mail" placeholder="Ingresa tu numero telefónico"
+                  class="form-section__input" />
+              </div>
+              <div class="form-section__div-delimiter">
+                <label for="password" class="form-section__label">Confirmar contraseña: *
+                </label>
+                <input type="password" name="confirmPassword" placeholder="Ingresa tu contraseña" id="password"
+                  class="form-section__input" />
+              </div>
+            </div>
+
+            <div>
+              <button type="button" class="form-section__btn form-section__btn--bg">
+                Iniciar sesión
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-move-right">
+                  <path d="M18 8L22 12L18 16" />
+                  <path d="M2 12H22" />
+                </svg>
+              </button>
+            </div>
+            <div class="form-section__div-delimiter-btn">
+              <button type="button" class="form-section__btn form-section__btn--border">
+                Registrarse
+              </button>
+            </div>
+
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
