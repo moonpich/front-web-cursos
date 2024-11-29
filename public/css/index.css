@@ -1,14 +1,24 @@
 @import url(./variables.css);
 body {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-main);
 }
 * {
   color: var(--text);
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+
+.content {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding: 20px;
+  text-align: center;
+}
+
 img {
   width: 3rem;
   height: 3rem;
@@ -61,14 +71,6 @@ img {
 }
 
 
-.footer{
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 0px;  
-  height: 80px;
-  background-color: var(--bg-secondary);
-
-}
 
 .footer__icons{
   display: flex;
@@ -108,4 +110,11 @@ img {
 .devices img {
   width: 80px;
   margin: 10px 0;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
