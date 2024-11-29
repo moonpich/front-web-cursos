@@ -76,3 +76,36 @@ img {
 
 }
 
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  text-align: left;
+}
+.hero .text {
+  flex: 1;
+}
+.hero .text h1 {
+  font-size: 48px;
+}
+.hero img {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 15px;
+}
+.info {
+  text-align: center;
+  padding: 30px;
+  background-color: #1e1e1e;
+}
+.info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.devices img {
+  width: 80px;
+  margin: 10px 0;
+}
