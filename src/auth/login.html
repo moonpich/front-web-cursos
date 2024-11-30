@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="../../public/css/login.css" />
-    <script src="./login.js" defer type="module"></script>
     <link
       rel="shortcut icon"
       href="../../public/img/log-3d.png"
       type="image/x-icon"
     />
-
-    <!-- <link rel="stylesheet" href="../../public/css/normalize.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./login.mjs" type="module" defer></script>
   </head>
   <body>
     <main class="main">
@@ -31,7 +39,7 @@
       </section>
 
       <section class="form-section">
-        <form class="form-section__form">
+        <form class="form-section__form" id="login_form" method="POST">
           <div class="form-section__div-header-info">
             <h3 class="form-section__title">Inicia sesion</h3>
           </div>
@@ -60,6 +68,7 @@
           </div>
           <div class="form-section__div-delimiter-btn">
             <button
+              id="btnLogin"
               type="button"
               class="form-section__btn form-section__btn--bg"
             >
