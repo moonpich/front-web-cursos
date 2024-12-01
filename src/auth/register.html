@@ -6,9 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register</title>
   <link rel="stylesheet" href="../../public/css/register.css" />
-  <script src="./register.js" defer></script>
-  <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
 
+  <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+/>
+<script
+  defer
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/toastify-js"
+></script>
+<script src="./register.mjs" defer type="module"></script>
 </head>
 
 <body>
@@ -30,11 +40,11 @@
           <div class="form-section_nameLast">
             <div class="form-section__div-delimiter">
               <label for="mail" class="form-section__label "> Nombre's: *</label>
-              <input type="name" name="name" autofocus id="mail" placeholder="Ingresa tu nombre"
+              <input type="name" name="name" autofocus id="name" placeholder="Ingresa tu nombre"
                 class="form-section__input" />
               <div class="form-section__div-delimiter">
                 <label for="mail" class="form-section__label"> Apellidos: </label>
-                <input type="lastName" name="lastName" autofocus id="mail" placeholder="Ingresa tus apellidos"
+                <input type="lastName" name="lastName" autofocus id="lastname" placeholder="Ingresa tus apellidos"
                   class="form-section__input" />
 
                 <div class="form-section__div-delimiter">
@@ -53,13 +63,13 @@
 
               <div class="form-section__div-delimiter">
                 <label for="mail" class="form-section__label "> Teléfono: *</label>
-                <input type="phone" name="phone" autofocus id="mail" placeholder="Ingresa tu numero telefónico"
+                <input type="phone" name="phone" autofocus id="phone" placeholder="Ingresa tu numero telefónico"
                   class="form-section__input" />
               </div>
               <div class="form-section__div-delimiter">
                 <label for="password" class="form-section__label">Confirmar contraseña: *
                 </label>
-                <input type="password" name="confirmPassword" placeholder="Ingresa tu contraseña" id="password"
+                <input type="password" name="confirmPassword" placeholder="Ingresa tu contraseña" id="confirmPassword"
                   class="form-section__input" />
               </div>
             </div>
@@ -76,7 +86,7 @@
               </button>
             </div>
             <div class="form-section__div-delimiter-btn">
-              <button type="button" class="form-section__btn form-section__btn--border">
+              <button type="button" class="form-section__btn form-section__btn--border" id="btn_register">
                 Registrarse
               </button>
             </div>
