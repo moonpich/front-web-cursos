@@ -1,4 +1,3 @@
-
 @import url(./variables.css);
 
 * {
@@ -74,10 +73,10 @@ body {
     max-width: 40%;
 }
 
-.hero__office--image{
+.hero__office--image {
     display: flex;
     justify-content: center;
-    background-image:url('./EspacioDeOficina.svg');
+    background-image: url('./EspacioDeOficina.svg');
     background-size: min(100rem);
     align-items: center;
     padding: 5rem;
@@ -90,7 +89,8 @@ body {
 
 .img--estudiantes {
     width: 100%;
-    max-width: 600px; /* Define un tamaño máximo para pantallas grandes */
+    max-width: 600px;
+    /* Define un tamaño máximo para pantallas grandes */
     height: auto;
     border-radius: 1rem;
 }
@@ -118,6 +118,18 @@ body {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.icon__Github:hover {
+    stroke: var(--github-hover);
+}
+
+.icon__Twitch:hover {
+    stroke: var(--twitch-hover);
+}
+
+.icon__questionMark:hover {
+    stroke: var(--question-hover);
 }
 
 @media (max-width: 1024px) {
@@ -175,8 +187,11 @@ body {
 
 .slide-slide-section__title {
     margin: 40px;
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.75rem; /* 28px */
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
-
+.swiper {
+    width: 600px;
+    height: 300px;
+}
