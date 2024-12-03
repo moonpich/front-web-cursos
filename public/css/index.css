@@ -1,4 +1,4 @@
-/* Estilos base */
+
 @import url(./variables.css);
 
 * {
@@ -60,16 +60,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 5rem;
     flex-wrap: wrap;
 }
 
 .hero__text {
     max-width: 50%;
+    font-size: 60px;
 }
+
 
 .hero__image {
     max-width: 40%;
+}
+
+.hero__office--image{
+    display: flex;
+    justify-content: center;
+    background-image:url('./EspacioDeOficina.svg');
+    background-size: min(100rem);
+    align-items: center;
+    padding: 5rem;
+    height: max(30rem);
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    font-size: 29px;
+
 }
 
 .img--estudiantes {
@@ -83,6 +99,7 @@ body {
     text-align: center;
     padding: 2rem;
 }
+
 
 .info__devices img {
     max-width: 200px;
@@ -161,3 +178,5 @@ body {
     font-size: 1.125rem; /* 18px */
     line-height: 1.75rem; /* 28px */
 }
+
+
