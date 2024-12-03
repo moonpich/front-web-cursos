@@ -1,7 +1,9 @@
 :root {
-  --bg-secondary: #05050A;
-  --bg-main: #05090B;
-  --primary: #00adb5;
-  --accent: #ac7dd2;
-  --text: #eeeeee;
+    --bg-secondary: #0b0e14;
+    --bg-main: #05090b;
+    --primary: #00adb5;
+    --accent: #ac7dd2;
+    --text: #eeeeee;
+    --primary-opacity: rgba(0, 173, 181, 0.4);
+    --bg-seconday-opacity: rgba(11, 14, 20, 0.6);
 }
