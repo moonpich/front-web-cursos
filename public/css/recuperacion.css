@@ -1,0 +1,104 @@
+@import url(./variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    background: var(--bg-main);
+    color: var(--text);
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main__form__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.main__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background: var(--bg-seconday-opacity);
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    border-radius: 16px;
+}
+.main__form__delimiter {
+    width: 300px;
+}
+.main__form__input {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: block;
+    background: var(--bg-seconday-opacity);
+    border: 1px solid var(--primary-opacity);
+    padding: 12px 16px;
+    border-radius: 6px;
+    width: 100%;
+}
+.main__form__input::placeholder {
+    color: var(--text);
+    opacity: 0.6;
+}
+
+.main__form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    padding: 12px 16px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--primary);
+    color: var(--text);
+    transition: background 1s ease-in-out;
+    border: none;
+    position: relative;
+}
+
+.lucide-mail,
+.lucide-mail-check {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.lucide-mail {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.lucide-mail-check {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+.main__form__btn:hover .lucide-mail {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.main__form__btn:hover .lucide-mail-check {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.main__form__btn:hover {
+    background: var(--primary-opacity);
+}

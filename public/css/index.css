@@ -1,5 +1,5 @@
 @import url(./variables.css);
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", serif;
     background: var(--bg-main);
     color: var(--text);
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .header__a--border {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primary-opacity);
 }
 
 .header__a:hover {
