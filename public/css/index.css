@@ -68,7 +68,6 @@ body {
     font-size: 60px;
 }
 
-
 .hero__image {
     max-width: 40%;
 }
@@ -76,7 +75,7 @@ body {
 .hero__office--image {
     display: flex;
     justify-content: center;
-    background-image: url('./EspacioDeOficina.svg');
+    background-image: url("./EspacioDeOficina.svg");
     background-size: min(100rem);
     align-items: center;
     padding: 5rem;
@@ -84,7 +83,6 @@ body {
     flex-wrap: wrap;
     background-repeat: no-repeat;
     font-size: 29px;
-
 }
 
 .img--estudiantes {
@@ -99,7 +97,6 @@ body {
     text-align: center;
     padding: 2rem;
 }
-
 
 .info__devices img {
     max-width: 200px;
@@ -175,7 +172,7 @@ body {
 
 @keyframes enhance-header {
     to {
-        background: hsla(0, 0%, 100%, 0.05);
+        background: var(--bg-seconday-opacity);
         backdrop-filter: blur(6px);
     }
 }
