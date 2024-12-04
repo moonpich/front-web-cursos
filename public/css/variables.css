@@ -1,10 +1,12 @@
 :root {
-  --bg-secondary: #05050A;
-  --bg-main: #05090B;
-  --primary: #00adb5;
-  --accent: #ac7dd2;
-  --text: #eeeeee;
-  --github-hover:  #f39c12 ;
-  --twitch-hover:  #8e44ad ;
-  --question-hover:  #f1c40f ;
+    --bg-secondary: #05050a;
+    --bg-main: #05090b;
+    --primary: #00adb5;
+    --accent: #ac7dd2;
+    --text: #eeeeee;
+    --github-hover: #f39c12;
+    --twitch-hover: #8e44ad;
+    --question-hover: #f1c40f;
+    --primary-opacity: rgba(0, 173, 181, 0.4);
+    --bg-seconday-opacity: rgba(11, 14, 20, 0.6);
 }
