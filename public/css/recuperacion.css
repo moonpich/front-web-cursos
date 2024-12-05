@@ -34,6 +34,7 @@ body {
     width: 350px;
     height: 250px;
     border-radius: 16px;
+    box-shadow: 0 0 25px var(--primary-opacity-low);
 }
 .main__form__delimiter {
     width: 300px;
@@ -51,6 +52,10 @@ body {
 .main__form__input::placeholder {
     color: var(--text);
     opacity: 0.6;
+}
+.main__form__input:focus {
+    outline: 1px solid var(--primary);
+    box-shadow: 0 0 25px var(--primary-opacity-low);
 }
 
 .main__form__btn {
