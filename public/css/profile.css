@@ -27,7 +27,8 @@ body {
 }
 
 .item {
-    background-color: #00bcd4;
+    background-color: var(--bg-main);
+    border: 1px solid var(--primary);
     color: white;
     padding: 20px;
     text-align: center;
