@@ -89,6 +89,7 @@ body {
     outline: 1px solid var(--primary-opacity);
     border: 1px solid var(--primary-opacity);
     background: var(--bg-seconday-opacity);
+    color: var(--text);
 }
 .form-section__input::placeholder {
     color: var(--text);

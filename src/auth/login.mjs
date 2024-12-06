@@ -24,9 +24,10 @@ btnLogin.addEventListener("click", async (ev) => {
             },
         }).showToast();
         setTimeout(() => {
-            window.location.href = "../../index.html";
+            window.location.href = "../profile/indexProfile.html";
         }, 1500);
         console.log(response);
+        return;
     }
 
     Toastify({
