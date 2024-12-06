@@ -11,27 +11,209 @@ body {
     font-family: "Montserrat", serif;
     background: var(--bg-main);
     color: var(--text);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--bg-main);
+    position: sticky;
+    top: 0;
+    left: 0;
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+}
+
+.header__img-logo {
+    height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--text);
+    transition: background 0.3s;
+}
+
+.header__a--bg {
+    background: var(--primary);
+}
+
+.header__a--border {
+    border: 1px solid var(--primary-opacity);
+}
+
+.header__a:hover {
+    opacity: 0.8;
+}
+
+.header__button--style {
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__text,
+    .hero__image {
+        max-width: 100%;
+    }
+
+    .img--estudiantes {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img--estudiantes {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header__a {
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .img--estudiantes {
+        max-width: 60%;
+    }
+}
+
+@keyframes enhance-header {
+    to {
+        background: var(--bg-seconday-opacity);
+        backdrop-filter: blur(6px);
+    }
 }
 
 .flex-container {
     display: flex;
-    /* Activa Flexbox */
-    justify-content: center;
-    /* Alineación horizontal */
     align-items: center;
-    /* Alineación vertical */
-    gap: 10px;
-    /* Espacio entre elementos */
-    height: 100vh;
-    /* Altura del contenedor */
+    padding: 80px;
+    margin-left: 100px;
+
 }
 
-.item {
-    background-color: var(--bg-main);
-    border: 1px solid var(--primary);
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-    height: 600px;
+
+.perfil-container {
+    background-color: var(--bg-secondary);
+    width: 80%;
+    /* Puedes ajustar el tamaño según sea necesario */
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    display: grid;
+
+
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.perfil-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.perfil-avatar img:hover {
+    transform: scale(1.1);
+}
+
+.perfil-datos h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.perfil-datos .cargo {
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.perfil-datos .correo {
+    font-size: 14px;
+    color: #555;
+}
+
+.cursos h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+.cursos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.curso-card {
+    background-color: var(--bg-seconday-opacity);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(138, 134, 134, 0.1);
+}
+
+.curso-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.curso-card p {
+    font-size: 14px;
+    color: var(--text);
 }
