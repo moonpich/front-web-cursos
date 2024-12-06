@@ -3,34 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Recuperacion</title>
+
         <link rel="stylesheet" href="../../public/css/recuperacion.css" />
         <script src="" type="module"></script>
         <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
         <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="./recuperacion.mjs" type="module"></script>
+        <script src="./contrasena.mjs" type="module"></script>
+        <title>Nueva contrasena</title>
     </head>
     <body>
         <main class="main" id="main">
             <form method="post" class="main__form" id="form_mail">
                 <div class="main__form__delimiter">
-                    <h3 class="main__form__title" id="title">Recuperación de contraseña</h3>
+                    <h3 class="main__form__title" id="title">Restablece tu contrasena</h3>
                 </div>
                 <div class="main__form__delimiter">
-                    <label for="email" class="main__form__label" id="label_email">Correo: </label>
+                    <label for="email" class="main__form__label" id="label_email">Nueva contrasena: </label>
                     <input
-                        type="email"
-                        name="email"
-                        id="email"
+                        type="password"
+                        name="password"
+                        id="password"
                         class="main__form__input"
-                        placeholder="joedoe@vercel.com"
+                        placeholder="*****"
                         autofocus
                     />
                 </div>
                 <div class="main__form__delimiter">
-                    <button type="button" class="main__form__btn" id="email_btn">
-                        Solicitar
+                    <button type="button" class="main__form__btn" id="password_btn">
+                        Cambiar
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"

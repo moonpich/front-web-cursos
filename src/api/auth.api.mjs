@@ -53,7 +53,7 @@ export const recoveryPasswordByEmail = async ({ email }) => {
     const objBody = {
         email: email,
     };
-    const request = await fetch("/api/auth/recovery", {
+    const request = await fetch("http://localhost:8080/api/auth/recovery", {
         method: "POST",
         body: JSON.stringify(objBody),
         headers: headers,
@@ -66,6 +66,40 @@ export const recoveryPasswordByEmail = async ({ email }) => {
     const response = await request.json();
 
     console.log(response);
+
+    return true;
+};
+
+export const sendVerifyCode = async ({ code }) => {
+    const request = await fetch(`http://localhost:8080/api/auth/code/${code}`, {
+        headers: headers,
+        credentials: "include",
+    });
+
+    if (!request.ok) {
+        return false;
+    }
+    const response = await request.json();
+    const { name, email } = response;
+    return {
+        name: name,
+        email: email,
+    };
+};
+
+export const changePassword = async ({ email, newPassword }) => {
+    const paswordObj = {
+        email: email,
+        password: newPassword,
+    };
+    const request = await fetch("http://localhost:8080/api/auth/password", {
+        method: "post",
+        headers: headers,
+        body: JSON.stringify(paswordObj),
+        credentials: "include",
+    });
+
+    if (!request.ok) return false;
 
     return true;
 };
