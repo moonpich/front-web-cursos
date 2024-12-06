@@ -1,0 +1,168 @@
+@import url(./variables.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    background: var(--bg-main);
+    color: var(--text);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--bg-main);
+    position: sticky;
+    top: 0;
+    left: 0;
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+}
+
+.header__img-logo {
+    height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--text);
+    transition: background 0.3s;
+}
+
+.header__a--bg {
+    background: var(--primary);
+}
+
+.header__a--border {
+    border: 1px solid var(--primary-opacity);
+}
+
+.header__a:hover {
+    opacity: 0.8;
+}
+
+@keyframes enhance-header {
+    to {
+        background: var(--bg-seconday-opacity);
+        backdrop-filter: blur(6px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header__a {
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .img--estudiantes {
+        max-width: 60%;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--bg-secondary-opacity);
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.course-header h1 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.course-header p {
+    font-size: 1rem;
+    color: var(--accent);
+}
+
+.course-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.course-details h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+.course-details p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.course-status {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: var(--primary-opacity);
+}
+
+.course-status.inactive {
+    background-color: var(--primary-opacity);
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .course-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .course-header p {
+        font-size: 0.9rem;
+    }
+
+    .course-details h2 {
+        font-size: 1.2rem;
+    }
+
+    .course-details p {
+        font-size: 1rem;
+    }
+
+    .course-status {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

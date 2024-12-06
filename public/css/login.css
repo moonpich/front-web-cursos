@@ -114,6 +114,7 @@ body {
     width: 100%;
     outline: 1px solid var(--primary-opacity);
     border: 1px solid var(--primary-opacity);
+    color: var(--text);
 }
 .form-section__input:focus {
     outline: 1px solid var(--primary);
