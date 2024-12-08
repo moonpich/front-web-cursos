@@ -235,3 +235,19 @@ body {
     color: var(--primary);
     text-align: center;
 }
+
+.course-btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--text);
+    border: 1px solid var(--primary-opacity);
+    transition: background 0.3s;
+    width: 100px;
+    margin-top: 15px;
+}
+
+.course-btn:hover {
+    cursor: pointer;
+}

@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (request === null) {
         const div = document.createElement("Message");
-        div.textContent = "NO existe el curso";
+        div.textContent = "No existe el curso";
         details.appendChild(div);
     }
-
     const { id, name, duration, syllabus, description, category } = request;
+    document.title = name;
 
     details.innerHTML = `
          <div class="course-header">
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <h2>Temario</h2>
         <p>1. ${syllabus}</p>
         </div>
-        <div class="course-status inactive">
+        <div class="course-status inactive" id="btn_suscribe" role="button">
             Incribirse
         </div>
     `;

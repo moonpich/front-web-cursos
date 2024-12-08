@@ -15,3 +15,23 @@ export const specificCourse = async ({ course }) => {
     const responseJson = await request.json();
     return responseJson.response;
 };
+
+const suscribe = async ({ user, course }) => {
+    const suscribeObj = {
+        id_user: user,
+        id_course: course,
+    };
+
+    const request = await fetch("http://localhost:8080/api/intersection/suscribe", {
+        method: "POST",
+        headers: headers,
+        credentials: "include",
+        body: JSON.stringify(suscribeObj),
+    });
+
+    if (!request.status !== 201) {
+        return false;
+    }
+
+    return true;
+};
