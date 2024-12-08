@@ -1,0 +1,36 @@
+@import url(../css/variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.btnlightness:hover {
+    background-color: #313131;
+    transition: background-color 250ms ease;
+}
+
+
+
+.leftsidebar {
+    box-shadow: 0 0 25px var(--primary-opacity-low);
+}
+
+.header__a--bg:hover {
+    background-color: #56c7c9;
+}
+
+
+.delbtn {
+    background-color: var(--github-hover);
+}
+
+.delbtn:hover {
+    background-color: #ffb745;
+    transition: background-color 250ms ease;
+}
+
+
+.edtbtn {
+    background-color: var(--twitch-hover);
+}
+.edtbtn:hover {
+    background-color: #a975be;
+    transition: background-color 250ms ease;
+}
