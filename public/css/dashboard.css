@@ -7,9 +7,21 @@
 }
 
 
+.mainContent {
+    height: 100vh;
+    overflow-y: auto;
+}
+
 
 .leftsidebar {
     box-shadow: 0 0 25px var(--primary-opacity-low);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.customCard {
+    max-height: fit-content;
+    box-shadow: 0 0 10px var(--primary-opacity-low);
 }
 
 .header__a--bg:hover {
@@ -33,4 +45,8 @@
 .edtbtn:hover {
     background-color: #a975be;
     transition: background-color 250ms ease;
+}
+
+.ctgText {
+    color: var(--text-big);
 }

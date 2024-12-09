@@ -12,7 +12,8 @@
 <body>
 <div class="container-fluid vh-100">
     <div class="row h-100">
-        <div class="col-2 d-block bg-black p-3 leftsidebar">
+        <!-- Sidebar -->
+        <div class="col-2 bg-black p-3 leftsidebar">
             <div class="d-flex mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                      stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -21,11 +22,13 @@
                     <circle cx="12" cy="10" r="4"/>
                     <circle cx="12" cy="12" r="10"/>
                 </svg>
-                <a class="d-inline text-decoration-none" href="../../src/profile/profile.html">
-                    <h6 class="d-block text-white m-0">Nombre</h6>
-                    <p class="d-block text-white m-0">Tipo de usuario</p>
+                <a class="text-decoration-none" href="../../src/profile/profile.html">
+                    <h6 class="text-white m-0">Nombre</h6>
+                    <p class="text-white m-0">Tipo de usuario</p>
                 </a>
             </div>
+
+
             <div class="d-block btnlightness p-2">
                 <a class="text-decoration-none" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
@@ -41,7 +44,7 @@
                 <a class="text-decoration-none" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                          stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                         class="d-line lucide lucide-tags m-2">
+                         class="d-inline lucide lucide-tags m-2">
                         <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19"/>
                         <path
                             d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"/>
@@ -52,26 +55,33 @@
             </div>
             <div class="d-block btnlightness p-2">
                 <a class="text-decoration-none" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                          stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                         class="d-inline lucide lucide-user m-2">
-                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
-                        <circle cx="12" cy="7" r="4"/>
+                         class="d-inline lucide lucide-users m-2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                     </svg>
                     <h5 class="d-inline text-white">Roles</h5>
                 </a>
             </div>
         </div>
-        <div class="col-10 p-3 bg-black">
+
+
+
+        <div class="col-10 p-4 bg-black mainContent">
+            <!-- ////////////////////////////////////////////////// Aqui van los cursos ///////////////////////////////////////////////////////// --->
             <div class="row">
-                <div class="col-6">
-                    <div class="card border-0 mb-3">
-                        <div class="card-body bg-black leftsidebar p-4">
+
+
+                <!-- Tarjeta fea-->
+                <div class="col-md-6 mb-4">
+                    <div class="card customCard border-0">
+                        <div class="card-body bg-black p-4">
                             <h5 class="card-title text-white">Titulo Curso</h5>
                             <p class="card-text text-white">Descripccion.</p>
-                            <button href="#"
-                                    class="text-white text-decoration-none header__a--bg rounded-3 border-0 p-2">Button
-                            </button>
+                            <p class="card-text ctgText">Categoria</p>
                             <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2">
                                 Editar
                             </button>
@@ -81,25 +91,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="card border-0 mb-3">
-                        <div class="card-body bg-black leftsidebar p-4">
-                            <h5 class="card-title text-white">Titulo Curso</h5>
-                            <p class="card-text text-white">Descripccion.</p>
-                            <button href="#"
-                                    class="text-white text-decoration-none header__a--bg rounded-3 border-0 p-2">Button
-                            </button>
-                            <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2">
-                                Editar
-                            </button>
-                            <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2">
-                                Eliminar
-                            </button>
-                        </div>
-                    </div>
-                </div>
+
+
+
+
+
+
             </div>
         </div>
+
+
+
+
+
     </div>
 </div>
 </body>
