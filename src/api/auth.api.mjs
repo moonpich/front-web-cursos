@@ -18,8 +18,14 @@ export const login = async ({ mail, password }) => {
     if (!request.ok) {
         return false;
     }
+
     const responseJson = await request.json();
-    console.log(responseJson);
+
+    const { response } = responseJson;
+
+    localStorage.setItem("details", response);
+
+    console.log(`${response}  : \n ${responseJson}`);
 
     return true;
 };
@@ -103,4 +109,3 @@ export const changePassword = async ({ email, newPassword }) => {
 
     return true;
 };
-export default login;

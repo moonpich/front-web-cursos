@@ -16,7 +16,7 @@ export const specificCourse = async ({ course }) => {
     return responseJson.response;
 };
 
-const suscribe = async ({ user, course }) => {
+export const suscribe = async ({ user, course }) => {
     const suscribeObj = {
         id_user: user,
         id_course: course,
