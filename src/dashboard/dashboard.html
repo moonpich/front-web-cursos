@@ -10,8 +10,11 @@
     <title>Bienvenido Administrador</title>
 </head>
 <body>
+
 <div class="container-fluid vh-100">
     <div class="row h-100">
+
+
         <!-- Sidebar -->
         <div class="col-2 bg-black p-3 leftsidebar">
             <div class="d-flex mb-4">
@@ -29,17 +32,26 @@
             </div>
 
 
-            <div class="d-block btnlightness p-2">
-                <a class="text-decoration-none" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
-                         stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                         class="d-inline lucide lucide-book m-2">
-                        <path
-                            d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
+            <div class="d-block p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                     stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                     class="d-inline lucide lucide-book m-2">
+                    <path
+                        d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
+                </svg>
+                <h5 class="d-inline text-white me-4">Cursos</h5>
+                <button type="button" class="d-inline bg-black border-0 btnlightness" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                         stroke="#f1c40f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"
+                         class="lucide lucide-plus btnlightness m-2">
+                        <path d="M5 12h14"/>
+                        <path d="M12 5v14"/>
                     </svg>
-                    <h5 class="d-inline text-white">Cursos</h5>
-                </a>
+                </button>
             </div>
+
+
             <div class="d-block btnlightness p-2">
                 <a class="text-decoration-none" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
@@ -53,6 +65,8 @@
                     <h5 class="d-inline text-white">Categorias</h5>
                 </a>
             </div>
+
+
             <div class="d-block btnlightness p-2">
                 <a class="text-decoration-none" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
@@ -69,13 +83,12 @@
         </div>
 
 
-
         <div class="col-10 p-4 bg-black mainContent">
             <!-- ////////////////////////////////////////////////// Aqui van los cursos ///////////////////////////////////////////////////////// --->
             <div class="row">
 
 
-                <!-- Tarjeta fea-->
+                <!-- ------------- Tarjeta curso fea ------------ -->
                 <div class="col-md-6 mb-4">
                     <div class="card customCard border-0">
                         <div class="card-body bg-black p-4">
@@ -97,14 +110,39 @@
 
 
 
+
+                <!-- --------------------------------------------------- Modal --------------------------------------------------------- -->
+                <div class="modal modal-lg fade modal-dialog modal-dialog-centered" id="modalCurso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content customModal">
+                            <div class="modal-header bg-black border-0">
+                                <h1 class="modal-title fs-5">Crear Nuevo Curso</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-black border-0">
+                                ...
+                                <form>
+
+                                </form>
+
+                            </div>
+                            <div class="modal-footer bg-black border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn bgGrn header__a--bg text-white">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
-
-
     </div>
+
+
 </div>
+
+<script src="bootstrap.js"></script>
+<script src="bootstrap.bundle.js"></script>
+
+
 </body>
 </html>

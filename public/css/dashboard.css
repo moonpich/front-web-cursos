@@ -24,6 +24,10 @@
     box-shadow: 0 0 10px var(--primary-opacity-low);
 }
 
+.customModal {
+    box-shadow: 0 0 10px var(--question-hover);
+}
+
 .header__a--bg:hover {
     background-color: #56c7c9;
 }
@@ -49,4 +53,16 @@
 
 .ctgText {
     color: var(--text-big);
+}
+
+.grnText {
+    color: var(--primary);
+}
+
+.bgGrn {
+    background-color: var(--primary);
+}
+
+body.modal-abierto {
+    overflow: hidden;
 }
