@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         <p class="course-syllabus">Temario: ${syllabus}</p>
          <p class="course-description">${description}.</p>
          <span class="course-category">Categoría: ${category.name}</span>
-        <a href="./src/course/course.html?course=${id}" class="course-btn">Ver más</a>
+        <a href="/src/course/course.html?course=${id}" class="course-btn">Ver más</a>
 
         `;
         slider.appendChild(div);

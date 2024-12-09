@@ -1,4 +1,4 @@
-import login from "../api/auth.api.mjs";
+import { login } from "../api/auth.api.mjs";
 
 const btnLogin = document.querySelector("#btnLogin");
 const form = document.getElementById("login_form");
