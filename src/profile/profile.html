@@ -7,6 +7,7 @@
     <title>Profile</title>
     <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
     <link rel="stylesheet" href="../../public/css/profile.css" />
+    <script type="module" src="./profile.mjs"></script>
 </head>
 
 <body>
@@ -42,29 +43,18 @@
             <div class="perfil-container">
                 <section class="perfil-header">
                     <div class="perfil-avatar">
-                        <img src="avatar.jpg" alt="Foto de perfil">
+                        <img src="https://github.com/shadcn.png" alt="Foto de perfil" id="profile">
                     </div>
                     <div class="perfil-datos">
-                        <h2>Enrique Hernandez </h2>
-                        <p class="cargo">Estudiante - Ingeniería en Sistemas</p>
-                        <p class="correo">enriquegonzalez@ejemplo.com</p>
+                        <h2 id="name">Enrique Hernandez </h2>
+                        <p class="role" id="phoneP">Estudiante - Ingeniería en Sistemas</p>
+                        <p class="correo" id="correo">enriquegonzalez@ejemplo.com</p>
                     </div>
                 </section>
-                <section class="cursos">
+                <section class="cursos" >
                     <h3>Cursos Inscritos</h3>
-                    <div class="cursos-lista">
-                        <div class="curso-card">
-                            <h4>Matemáticas Avanzadas</h4>
-                            <p>8:00 AM - 10:00 AM</p>
-                        </div>
-                        <div class="curso-card">
-                            <h4>Programación en Java</h4>
-                            <p>10:30 AM - 12:30 PM</p>
-                        </div>
-                        <div class="curso-card">
-                            <h4>Base de Datos</h4>
-                            <p>1:00 PM - 3:00 PM</p>
-                        </div>
+                    <div class="cursos-lista" id="enrolled">
+                       
                     </div>
                 </section>
             </div>

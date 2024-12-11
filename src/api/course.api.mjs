@@ -9,6 +9,7 @@ export const specificCourse = async ({ course }) => {
     });
 
     if (!request.ok) {
+        console.log(request.status);
         return null;
     }
 
@@ -34,4 +35,26 @@ export const suscribe = async ({ user, course }) => {
     }
 
     return true;
+};
+
+export const myCourses = async ({ user }) => {
+    const id = parseInt(user);
+
+    const request = await fetch(`http://localhost:8080/api/intersection/course/${id}`, {
+        headers: headers,
+        method: "GET",
+        credentials: "include",
+    });
+
+    if (!request.ok) {
+        return null;
+    }
+
+    const responseJson = await request.json();
+
+    if (responseJson.response.length === 0) {
+        return null;
+    }
+
+    return responseJson.response;
 };
