@@ -24,6 +24,11 @@
     box-shadow: 0 0 10px var(--primary-opacity-low);
 }
 
+.customCard:hover {
+    box-shadow: 0 0 20px var(--primary-opacity-low);
+    transition: box-shadow 250ms ease-in-out;
+}
+
 .customModal {
     box-shadow: 0 0 10px var(--question-hover);
 }
@@ -39,7 +44,13 @@
 
 .delbtn:hover {
     background-color: #ffb745;
-    transition: background-color 250ms ease;
+    transition: background-color 250ms ease-in-out;
+}
+
+
+.delbtn:active {
+    box-shadow: 0 0 15px var(--github-hover);
+    transition: box-shadow 50ms ease-in-out;
 }
 
 
