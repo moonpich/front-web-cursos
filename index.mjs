@@ -14,20 +14,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         return;
     }
 
+    let counter = 1;
     courses.forEach((item) => {
         let { id, name, duration, syllabus, description, category } = item;
         const div = document.createElement("div");
         div.classList.add("course-card");
-
         div.innerHTML = `
              <h2 class="course-name">${name}</h2>
         <p class="course-duration">Duración: ${duration}</p>
         <p class="course-syllabus">Temario: ${syllabus}</p>
          <p class="course-description">${description}.</p>
          <span class="course-category">Categoría: ${category.name}</span>
-        <a href="/src/course/course.html?course=${id}" class="course-btn">Ver más</a>
+        <a href="/src/course/course.html?course=${id}" class="course-btn" id="${counter}">Ver más</a>
 
         `;
         slider.appendChild(div);
+        counter++;
     });
 });
