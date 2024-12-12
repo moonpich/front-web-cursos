@@ -30,8 +30,14 @@
 }
 
 .customModal {
-    box-shadow: 0 0 10px var(--question-hover);
+    box-shadow: 0 0 15px var(--question-hover);
 }
+
+.customModal:hover {
+    box-shadow: 0 0 20px var(--question-hover);
+    transition: box-shadow 250ms ease-in-out;
+}
+
 
 .header__a--bg:hover {
     background-color: #56c7c9;
@@ -60,6 +66,10 @@
 .edtbtn:hover {
     background-color: #a975be;
     transition: background-color 250ms ease;
+}
+.edtbtn:active {
+    box-shadow: 0 0 15px var(--twitch-hover);
+    transition: box-shadow 50ms ease-in-out;
 }
 
 .ctgText {

@@ -83,7 +83,7 @@
         </div>
 
 
-        <div class="col-10 p-4 bg-black mainContent">
+        <div class="col-10 p-4 bg-black mainConten">
             <!-- ////////////////////////////////////////////////// Aqui van los cursos ///////////////////////////////////////////////////////// --->
             <div class="row">
 
@@ -112,35 +112,32 @@
 
 
                 <!-- --------------------------------------------------- Modal (Crear Curso)--------------------------------------------------------- -->
-                <div class="modal modal-lg fade modal-dialog modal-dialog-centered w-75" id="modalCurso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal modal-lg fade modal-dialog modal-dialog-centered w-100 position-absolute top-50 end-0 translate-middle-y" id="modalCurso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content customModal">
-                            <div class="modal-header bg-black border-0">
-                                <h1 class="modal-title fs-5">Crear Nuevo Curso</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-header bg-black border-0 m-0">
+                                <h1 class="modal-title">Crear Nuevo Curso</h1>
                             </div>
                             <div class="modal-body bg-black border-0">
                                 <form>
                                     <div class="container">
                                         <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-6 p-1">
-                                                    <label for="nomCur">Nombre:</label>
-                                                    <input name="nombreCur" id="nomCur" type="text" class="form-control" placeholder="Nombre Categoria">
+                                            <label for="nomCur" class="mb-1">Nombre:</label>
+                                            <input name="nombreCur" id="nomCur" type="text" class="form-control mb-3" placeholder="Nombre Categoria">
 
-                                                    <label for="durCur">Duracion:</label>
-                                                    <input name="duracionCur" id="durCur" type="text" class="form-control" placeholder="Duracion">
+                                            <label for="durCur" class="mb-1">Duracion:</label>
+                                            <input name="duracionCur" id="durCur" type="text" class="form-control mb-3" placeholder="Duracion">
 
-                                                    <label for="catCur">Categoria</label>
-                                                    <select name="categoriaCur" id="catCur" class="form-select" aria-label="Default select example">
-                                                        <option selected>Seleccione...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-6 p-1">
-                                                    <label for="durCur">Descripcion:</label>
-                                                    <textarea name="descripcionCur" id="desCur" rows="3"></textarea>
-                                                </div>
-                                            </div>
+                                            <label for="catCur" class="mb-1">Categoria</label>
+                                            <select name="categoriaCur" id="catCur" class="form-select mb-3" aria-label="Default select example">
+                                                <option selected>Seleccione...</option>
+                                            </select>
+
+                                            <label for="desCur" class="mb-3">Descripcion:</label>
+                                            <textarea name="descripcionCur" id="desCur"></textarea>
+                                            <p>  </p>
+                                            <label for="temCur" class="mb-1">Temario:</label>
+                                            <textarea name="temarioCur" id="temCur"></textarea>
                                         </div>
                                     </div>
                                 </form>
