@@ -1,0 +1,146 @@
+@import url("../css/variables.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px var(--primary); /* Sombra */
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+    background-color: #000; /* Fondo negro para la tabla */
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Bordes blancos semitransparentes */
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente más claro para los encabezados */
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo claro al pasar el mouse */
+}
+
+.btn {
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.delbtn {
+    background-color: var(--github-hover);
+}
+
+.delbtn:hover {
+    background-color: #ffb745;
+    transition: background-color 250ms ease;
+}
+
+.edtbtn {
+    background-color: var(--twitch-hover);
+}
+
+.edtbtn:hover {
+    background-color: #a975be;
+    transition: background-color 250ms ease;
+}
+
+.btnlightness:hover {
+    background-color: #313131;
+    transition: background-color 250ms ease;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.status.active span {
+    background-color: green;
+}
+
+.status.inactive span {
+    background-color: gray;
+}
+
+.status.suspended span {
+    background-color: orange;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 10px;
+}
+
+.controls button {
+    border: none;
+    padding: 8px 12px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.status span {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.fondo-personalizado {
+    background-color: black; /* Color en hexadecimal */
+}
