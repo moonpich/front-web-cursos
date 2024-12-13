@@ -1,220 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="../../public/css/bootstrap.css" />
-        <link rel="stylesheet" href="../../public/css/index.css" />
-        <link rel="stylesheet" href="../../public/css/dashboard.css" />
-        <link rel="stylesheet" href="../../public/css/variables.css" />
-        <title>Administrador</title>
-        <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
-    </head>
 
-    <body>
-        <div class="container-fluid vh-100">
-            <div class="row h-100">
-                <!-- Sidebar -->
-                <div class="col-2 bg-black p-3 leftsidebar">
-                    <div class="d-flex mb-4">
-                        <img
-                            src="https://github.com/shadcn.png"
-                            style="width: 50px; height: 50px; border-radius: 50%; margin-right: 15px"
-                            alt=""
-                        />
-                        <a class="text-decoration-none" href="../../src/profile/profile.html">
-                            <h6 class="text-white m-0">Nombre</h6>
-                            <p class="text-white m-0">Tipo de usuario</p>
-                        </a>
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../public/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../public/css/index.css" />
+    <link rel="stylesheet" href="../../public/css/dashboard.css" />
+    <link rel="stylesheet" href="../../public/css/variables.css" />
+    <title>Administrador</title>
+    <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
+</head>
 
-                    <div class="d-block p-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="30"
-                            height="30"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="#00adb5"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="d-inline lucide lucide-book m-2"
-                        >
-                            <path
-                                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
-                            />
-                        </svg>
-                        <h5 class="d-inline text-white me-4">Cursos</h5>
-                        <button
-                            type="button"
-                            class="d-inline bg-black border-0 btnlightness"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalCurso"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="25"
-                                height="25"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#f1c40f"
-                                stroke-width="2.0"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-plus btnlightness m-2"
-                            >
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="d-block btnlightness p-2">
-                        <a class="text-decoration-none" href="#">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="30"
-                                height="30"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#00adb5"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="d-inline lucide lucide-tags m-2"
-                            >
-                                <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
-                                <path
-                                    d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"
-                                />
-                                <circle cx="6.5" cy="9.5" r=".5" fill="currentColor" />
-                            </svg>
-                            <h5 class="d-inline text-white">Categorias</h5>
-                        </a>
-                    </div>
-
-                    <div class="d-block btnlightness p-2">
-                        <a class="text-decoration-none" href="../dashboard/usuarios.html">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="32"
-                                height="32"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#00adb5"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="d-inline lucide lucide-users m-2"
-                            >
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
-                            <h5 class="d-inline text-white">Usuarios</h5>
-                        </a>
-                    </div>
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <!-- Sidebar -->
+            <div class="col-2 bg-black p-3 leftsidebar">
+                <div class="d-flex mb-4">
+                    <img src="https://github.com/shadcn.png"
+                        style="width: 50px; height: 50px; border-radius: 50%; margin-right: 15px" alt="" />
+                    <a class="text-decoration-none" href="../../src/profile/profile.html">
+                        <h6 class="text-white m-0">Nombre</h6>
+                        <p class="text-white m-0">Tipo de usuario</p>
+                    </a>
                 </div>
 
-                <div class="col-10 p-4 bg-black mainConten">
-                    <!-- ////////////////////////////////////////////////// Aqui van los cursos ///////////////////////////////////////////////////////// --->
-                    <div class="row">
-                        <!-- ------------- Tarjeta curso fea ------------ -->
-                        <div class="col-md-6 mb-4">
-                            <div class="card customCard border-0 rounded-3">
-                                <div class="card-body bg-black p-4">
-                                    <h5 class="card-title text-white">Titulo Curso</h5>
-                                    <p class="card-text text-white">Descripccion.</p>
-                                    <p class="card-text ctgText">Categoria</p>
-                                    <button
-                                        href="#"
-                                        class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
-                                    >
-                                        Editar
-                                    </button>
-                                    <button
-                                        href="#"
-                                        class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
-                                    >
-                                        Eliminar
-                                    </button>
-                                </div>
+                <div class="d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="d-inline lucide lucide-book m-2">
+                        <path
+                            d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                    </svg>
+                    <h5 class="d-inline text-white me-4">Cursos</h5>
+                    <button type="button" class="d-inline bg-black border-0 btnlightness" data-bs-toggle="modal"
+                        data-bs-target="#modalCurso">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="#f1c40f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-plus btnlightness m-2">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="d-block btnlightness p-2">
+                    <a class="text-decoration-none" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="d-inline lucide lucide-tags m-2">
+                            <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
+                            <path
+                                d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z" />
+                            <circle cx="6.5" cy="9.5" r=".5" fill="currentColor" />
+                        </svg>
+                        <h5 class="d-inline text-white">Categorias</h5>
+                    </a>
+                </div>
+
+                <div class="d-block btnlightness p-2">
+                    <a class="text-decoration-none" href="../dashboard/usuarios.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="d-inline lucide lucide-users m-2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        <h5 class="d-inline text-white">Usuarios</h5>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-10 p-4 bg-black mainConten">
+                <!-- MAIN CONTENT -->
+                <div class="col-10">
+
+                    <!-- HEADER -->
+                    <div class="header d-flex justify-content-between align-items-center">
+                        <h2 class="m-0">Listado de Cursos</h2>
+
+                    </div>
+
+                    <!-- TABLE -->
+                    <div class="container mt-4">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nombre</th>
+                                    <th>Duracion</th>
+                                    <th>Categoria</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Curso Básico</td>
+                                    <td>40 horas</td>
+                                    <td>Desarrollo Web</td>
+                                    <td>
+                                        <button
+                                            class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
+                                            data-id="1">Editar</button>
+                                        <button
+                                            class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
+                                            data-id="1">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Curso Intermedio</td>
+                                    <td>60 horas</td>
+                                    <td>Programación</td>
+                                    <td>
+                                        <button
+                                            class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
+                                            data-id="2">Editar</button>
+                                        <button
+                                            class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
+                                            data-id="2">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Curso Avanzado</td>
+                                    <td>80 horas</td>
+                                    <td>Machine Learning</td>
+                                    <td>
+                                        <button
+                                            class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
+                                            data-id="3">Editar</button>
+                                        <button
+                                            class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
+                                            data-id="3">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <!-- ------------- Tarjeta curso fea ------------ -->
+
+
+                <!-- --------------------------------------------------- Modal (Crear Curso)--------------------------------------------------------- -->
+                <div class="modal modal-lg fade modal-dialog modal-dialog-centered w-100 position-absolute top-50 end-0 translate-middle-y"
+                    id="modalCurso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content customModal">
+                            <div class="modal-header bg-black border-0 m-0">
+                                <h1 class="modal-title">Crear Nuevo Curso</h1>
                             </div>
-                        </div>
+                            <div class="modal-body bg-black border-0">
+                                <form>
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="nomCur" class="mb-1">Nombre:</label>
+                                            <input name="nombreCur" id="nomCur" type="text" class="form-control mb-3"
+                                                placeholder="Nombre Categoria" />
 
-                        <!-- --------------------------------------------------- Modal (Crear Curso)--------------------------------------------------------- -->
-                        <div
-                            class="modal modal-lg fade modal-dialog modal-dialog-centered w-100 position-absolute top-50 end-0 translate-middle-y"
-                            id="modalCurso"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalLabel"
-                            aria-hidden="true"
-                        >
-                            <div class="modal-dialog">
-                                <div class="modal-content customModal">
-                                    <div class="modal-header bg-black border-0 m-0">
-                                        <h1 class="modal-title">Crear Nuevo Curso</h1>
+                                            <label for="durCur" class="mb-1">Duracion:</label>
+                                            <input name="duracionCur" id="durCur" type="text" class="form-control mb-3"
+                                                placeholder="Duracion" />
+
+                                            <label for="catCur" class="mb-1">Categoria</label>
+                                            <select name="categoriaCur" id="catCur" class="form-select mb-3"
+                                                aria-label="Default select example">
+                                                <option selected>Seleccione...</option>
+                                            </select>
+
+                                            <label for="desCur" class="mb-3">Descripcion:</label>
+                                            <textarea name="descripcionCur" id="desCur"></textarea>
+                                            <p></p>
+                                            <label for="temCur" class="mb-1">Temario:</label>
+                                            <textarea name="temarioCur" id="temCur"></textarea>
+                                        </div>
                                     </div>
-                                    <div class="modal-body bg-black border-0">
-                                        <form>
-                                            <div class="container">
-                                                <div class="form-group">
-                                                    <label for="nomCur" class="mb-1">Nombre:</label>
-                                                    <input
-                                                        name="nombreCur"
-                                                        id="nomCur"
-                                                        type="text"
-                                                        class="form-control mb-3"
-                                                        placeholder="Nombre Categoria"
-                                                    />
-
-                                                    <label for="durCur" class="mb-1">Duracion:</label>
-                                                    <input
-                                                        name="duracionCur"
-                                                        id="durCur"
-                                                        type="text"
-                                                        class="form-control mb-3"
-                                                        placeholder="Duracion"
-                                                    />
-
-                                                    <label for="catCur" class="mb-1">Categoria</label>
-                                                    <select
-                                                        name="categoriaCur"
-                                                        id="catCur"
-                                                        class="form-select mb-3"
-                                                        aria-label="Default select example"
-                                                    >
-                                                        <option selected>Seleccione...</option>
-                                                    </select>
-
-                                                    <label for="desCur" class="mb-3">Descripcion:</label>
-                                                    <textarea name="descripcionCur" id="desCur"></textarea>
-                                                    <p></p>
-                                                    <label for="temCur" class="mb-1">Temario:</label>
-                                                    <textarea name="temarioCur" id="temCur"></textarea>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer bg-black border-0">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                            Cerrar
-                                        </button>
-                                        <button type="submit" class="btn bgGrn header__a--bg text-white">
-                                            Crear Curso
-                                        </button>
-                                    </div>
-                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer bg-black border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="submit" class="btn bgGrn header__a--bg text-white">
+                                    Crear Curso
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
 
-        <script src="bootstrap.js"></script>
-        <script src="bootstrap.bundle.js"></script>
-    </body>
+    <script src="bootstrap.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
 </html>
