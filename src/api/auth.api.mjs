@@ -30,6 +30,23 @@ export const login = async ({ mail, password }) => {
     return true;
 };
 
+export const admin = async ({ mail, password }) => {
+    const authObj = {
+        email: mail,
+        password: password,
+    };
+    const request = await fetch("http://localhost:8080/api/auth/admin", {
+        headers: headers,
+        method: "POST",
+        body: JSON.stringify(authObj),
+        credentials: "include",
+    });
+
+    if (request.status !== 200) return false;
+
+    return true;
+};
+
 export const register = async ({ name, email, lastname, phone, password }) => {
     const registerBody = {
         name: name,
