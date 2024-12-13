@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,80 +9,151 @@
     <link rel="stylesheet" href="../../public/css/variables.css">
     <link rel="stylesheet" href="../../public/css/usuarios.css">
     <title>Lista de usuarios</title>
+    <link rel="shortcut icon" href="../../public/img/log-3d.png" type="image/x-icon" />
 </head>
-<body class="fondo-personalizado">
-    <div>
 
-        <!-- HEADER -->
-        <div class="header">
-            USUARIOS
-            <div class="controls">
-                <button class="btnlightness">Añadir usuario</button>
+<body class="fondo-personalizado">
+    <div class="d-flex">
+
+        <!-- SIDEBAR -->
+        <div class="col-2 bg-black p-3 leftsidebar">
+
+            <!-- User Profile -->
+            <div class="d-flex mb-4 align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
+                    stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="d-inline lucide lucide-circle-user-round me-3">
+                    <path d="M18 20a6 6 0 0 0-12 0" />
+                    <circle cx="12" cy="10" r="4" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg>
+                <a class="text-decoration-none" href="../../src/profile/profile.html">
+                    <h6 class="text-white m-0">Nombre</h6>
+                    <p class="text-white m-0">Tipo de usuario</p>
+                </a>
+            </div>
+
+            <!-- Sidebar Links -->
+            <div class="d-block p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                    stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="d-inline lucide lucide-book m-2">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                </svg>
+                <h5 class="d-inline text-white me-4">Cursos</h5>
+                <button type="button" class="d-inline bg-black border-0 btnlightness" data-bs-toggle="modal"
+                    data-bs-target="#modalCurso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                        stroke="#f1c40f" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-plus btnlightness m-2">
+                        <path d="M5 12h14" />
+                        <path d="M12 5v14" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="d-block btnlightness p-2">
+                <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="d-inline lucide lucide-tags m-2">
+                        <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
+                        <path
+                            d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z" />
+                        <circle cx="6.5" cy="9.5" r=".5" fill="currentColor" />
+                    </svg>
+                    <h5 class="d-inline text-white">Categorias</h5>
+                </a>
+            </div>
+
+            <div class="d-block btnlightness p-2">
+                <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="d-inline lucide lucide-users m-2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                    <h5 class="d-inline text-white">Usuarios</h5>
+                </a>
             </div>
         </div>
 
-        <!-- TABLA -->
-        <table class="container">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nombre</th>
-                    <th>Fecha de creación</th>
-                    <th>Rol</th>
-                    <th>Estado</th>
-                    <th>Acción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Michael Holz</td>
-                    <td>04/10/2013</td>
-                    <td>Admin</td>
-                    <td>Activo</td>                    
-                    <td>
-                        <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2" data-id="1">
-                            Editar
-                        </button>
-                        <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2" data-id="1">
-                            Eliminar
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Paula Wilson</td>
-                    <td>05/08/2014</td>
-                    <td>Publisher</td>
-                    <td>Activo</td>                    
-                    <td>
-                        <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2" data-id="2">
-                            Editar
-                        </button>
-                        <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2" data-id="2">
-                            Eliminar
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Antonio Moreno</td>
-                    <td>11/05/2015</td>
-                    <td>Developer</td>
-                    <td>Inactivo</td>                    
-                    <td>
-                        <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2" data-id="3">
-                            Editar
-                        </button>
-                        <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2" data-id="3">
-                            Eliminar
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- MAIN CONTENT -->
+        <div class="col-10">
+
+            <!-- HEADER -->
+            <div class="header d-flex justify-content-between align-items-center">
+                <h2 class="m-0">USUARIOS</h2>
+                <div class="controls">
+                    <button class="btnlightness">Añadir usuario</button>
+                </div>
+            </div>
+
+            <!-- TABLE -->
+            <div class="container mt-4">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Fecha de creación</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Michael Holz</td>
+                            <td>04/10/2013</td>
+                            <td>Admin</td>
+                            <td>Activo</td>
+                            <td>
+                                <button class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
+                                    data-id="1">Editar</button>
+                                <button class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
+                                    data-id="1">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Paula Wilson</td>
+                            <td>05/08/2014</td>
+                            <td>Publisher</td>
+                            <td>Activo</td>
+                            <td>
+                                <button class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
+                                    data-id="2">Editar</button>
+                                <button class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
+                                    data-id="2">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Antonio Moreno</td>
+                            <td>11/05/2015</td>
+                            <td>Developer</td>
+                            <td>Inactivo</td>
+                            <td>
+                                <button class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2"
+                                    data-id="3">Editar</button>
+                                <button class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2"
+                                    data-id="3">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
     </div>
-    
+
     <script src="../../public/js/usuarios.js"></script>
 </body>
+
 </html>
