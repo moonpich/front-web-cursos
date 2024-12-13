@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/index.css">
+    <link rel="stylesheet" href="../../public/css/variables.css">
+    <link rel="stylesheet" href="../../public/css/usuarios.css">
+    <title>Lista de usuarios</title>
+</head>
+<body class="fondo-personalizado">
+    <div>
+
+        <!-- HEADER -->
+        <div class="header">
+            USUARIOS
+            <div class="controls">
+                <button class="btnlightness">Añadir usuario</button>
+            </div>
+        </div>
+
+        <!-- TABLA -->
+        <table class="container">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Fecha de creación</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Michael Holz</td>
+                    <td>04/10/2013</td>
+                    <td>Admin</td>
+                    <td>Activo</td>                    
+                    <td>
+                        <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2" data-id="1">
+                            Editar
+                        </button>
+                        <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2" data-id="1">
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Paula Wilson</td>
+                    <td>05/08/2014</td>
+                    <td>Publisher</td>
+                    <td>Activo</td>                    
+                    <td>
+                        <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2" data-id="2">
+                            Editar
+                        </button>
+                        <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2" data-id="2">
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Antonio Moreno</td>
+                    <td>11/05/2015</td>
+                    <td>Developer</td>
+                    <td>Inactivo</td>                    
+                    <td>
+                        <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2" data-id="3">
+                            Editar
+                        </button>
+                        <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2" data-id="3">
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="../../public/js/usuarios.js"></script>
+</body>
+</html>
