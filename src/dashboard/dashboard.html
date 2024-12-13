@@ -27,10 +27,68 @@
                         <circle cx="12" cy="10" r="4" />
                         <circle cx="12" cy="12" r="10" />
                     </svg>
+<<<<<<< HEAD
                     <a class="text-decoration-none" href="../../src/profile/profile.html">
                         <h6 class="text-white m-0">Nombre</h6>
                         <p class="text-white m-0">Tipo de usuario</p>
                     </a>
+=======
+                </button>
+            </div>
+
+
+            <div class="d-block btnlightness p-2">
+                <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                         stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                         class="d-inline lucide lucide-tags m-2">
+                        <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19"/>
+                        <path
+                            d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"/>
+                        <circle cx="6.5" cy="9.5" r=".5" fill="currentColor"/>
+                    </svg>
+                    <h5 class="d-inline text-white">Categorias</h5>
+                </a>
+            </div>
+
+
+            <div class="d-block btnlightness p-2">
+                <a class="text-decoration-none" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                         stroke="#00adb5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                         class="d-inline lucide lucide-users m-2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <h5 class="d-inline text-white">Usuarios</h5>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-10 p-4 bg-black mainConten">
+            <!-- ////////////////////////////////////////////////// Aqui van los cursos ///////////////////////////////////////////////////////// --->
+            <div class="row">
+
+
+                <!-- ------------- Tarjeta curso fea ------------ -->
+                <div class="col-md-6 mb-4">
+                    <div class="card customCard border-0 rounded-3">
+                        <div class="card-body bg-black p-4">
+                            <h5 class="card-title text-white">Titulo Curso</h5>
+                            <p class="card-text text-white">Descripccion.</p>
+                            <p class="card-text ctgText">Categoria</p>
+                            <button href="#" class="text-white text-decoration-none edtbtn rounded-3 border-0 m-2 p-2">
+                                Editar
+                            </button>
+                            <button href="#" class="text-white text-decoration-none delbtn rounded-3 border-0 m-2 p-2">
+                                Eliminar
+                            </button>
+                        </div>
+                    </div>
+>>>>>>> 0de41d5b049537d4c87efe6cb8bd6dfd0e94e07f
                 </div>
 
 
@@ -84,6 +142,7 @@
                 </div>
             </div>
 
+<<<<<<< HEAD
 
             <div class="col-10 p-4 bg-black mainContent">
                 <!-- ////////////////////////////////////////////////// Aqui van los cursos ///////////////////////////////////////////////////////// --->
@@ -151,6 +210,35 @@
                                                     </div>
                                                 </div>
                                             </div>
+=======
+                <!-- --------------------------------------------------- Modal (Crear Curso)--------------------------------------------------------- -->
+                <div class="modal modal-lg fade modal-dialog modal-dialog-centered w-100 position-absolute top-50 end-0 translate-middle-y" id="modalCurso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content customModal">
+                            <div class="modal-header bg-black border-0 m-0">
+                                <h1 class="modal-title">Crear Nuevo Curso</h1>
+                            </div>
+                            <div class="modal-body bg-black border-0">
+                                <form>
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <label for="nomCur" class="mb-1">Nombre:</label>
+                                            <input name="nombreCur" id="nomCur" type="text" class="form-control mb-3" placeholder="Nombre Categoria">
+
+                                            <label for="durCur" class="mb-1">Duracion:</label>
+                                            <input name="duracionCur" id="durCur" type="text" class="form-control mb-3" placeholder="Duracion">
+
+                                            <label for="catCur" class="mb-1">Categoria</label>
+                                            <select name="categoriaCur" id="catCur" class="form-select mb-3" aria-label="Default select example">
+                                                <option selected>Seleccione...</option>
+                                            </select>
+
+                                            <label for="desCur" class="mb-3">Descripcion:</label>
+                                            <textarea name="descripcionCur" id="desCur"></textarea>
+                                            <p>  </p>
+                                            <label for="temCur" class="mb-1">Temario:</label>
+                                            <textarea name="temarioCur" id="temCur"></textarea>
+>>>>>>> 0de41d5b049537d4c87efe6cb8bd6dfd0e94e07f
                                         </div>
                                     </form>
 
